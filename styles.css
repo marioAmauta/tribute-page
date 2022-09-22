@@ -30,15 +30,13 @@ body {
 
 #img-div {
   background-color: white;
-  padding-top: 2rem;
   margin: 1rem;
   border-radius: 0.5rem;
 }
 
 #image {
-  display: block;
   max-width: 100%;
-  margin: 0 auto;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 #img-caption {
