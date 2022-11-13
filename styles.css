@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -8,7 +9,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 body {
@@ -23,13 +24,6 @@ body {
   border-radius: 0.5rem;
 }
 
-.tribute-hero {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #title {
   font-size: 2.2rem;
 }
@@ -40,7 +34,6 @@ body {
 
 #image {
   max-width: 100%;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 #img-caption {
@@ -49,6 +42,29 @@ body {
 
 #tribute-info {
   padding: 1rem;
+}
+
+.tribute-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.arrow {
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
 }
 
 .info-section-title {
