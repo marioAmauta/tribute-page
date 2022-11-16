@@ -22,13 +22,12 @@ body {
   text-align: center;
   color: #333;
   border-radius: 0.5rem;
-  background-color: red;
-  margin: .5rem;
+  background-color: aliceblue;
+  margin: 1rem;
 }
 
 #title {
   font-size: 2.2rem;
-  margin-top: 2rem;
 }
 
 #img-div {
@@ -37,7 +36,7 @@ body {
 
 #image {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: .5rem;
 }
 
@@ -54,7 +53,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .arrow {
@@ -64,7 +69,7 @@ body {
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
 .arrow:hover {
