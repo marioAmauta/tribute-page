@@ -1,10 +1,10 @@
 :root {
-  --main-background-color: aliceblue;
-  --main-color: gray;
+  --main-background-color: lightgray;
+  --main-color: black;
   --list-item-background-color: black;
   --list-item-color: white;
-  --list-item-label-background-color: red;
-  --list-item-label-color: ;
+  --list-item-label-background-color: lightgray;
+  --list-item-label-color: black;
   --list-item-text-background-color: ;
   --list-item-text-color: ;
 }
@@ -147,6 +147,11 @@ li {
   .title-container {
     position: relative;
     top: 8rem;
+  }
+
+  .list-item {
+    width: 70%;
+    margin: 2rem auto;
   }
 
   #img-div {
