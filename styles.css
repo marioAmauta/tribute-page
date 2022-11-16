@@ -1,3 +1,14 @@
+:root {
+  --main-background-color: aliceblue;
+  --main-color: gray;
+  --list-item-background-color: black;
+  --list-item-color: white;
+  --list-item-label-background-color: red;
+  --list-item-label-color: ;
+  --list-item-text-background-color: ;
+  --list-item-text-color: ;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,23 +31,18 @@ body {
 
 #main {
   text-align: center;
-  color: #333;
-  border-radius: 0.5rem;
-  background-color: aliceblue;
-  margin: 1rem;
+  color: var(--main-color);
+  background-color: var(--main-background-color);
 }
 
 #title {
   font-size: 2.2rem;
-}
-
-#img-div {
-  border-radius: 0.5rem;
+  margin-bottom: .3rem;
 }
 
 #image {
+  min-width: 300px;
   max-width: 100%;
-  height: auto;
   border-radius: .5rem;
 }
 
@@ -53,7 +59,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 2rem 0 4rem 0;
 }
 
 .arrow-container {
@@ -63,6 +70,7 @@ body {
 }
 
 .arrow {
+  color: var(--main-color);
   height: 1.3rem;
   width: 1.3rem;
   border-style: solid;
@@ -84,7 +92,6 @@ body {
 
 .list-section {
   list-style: none;
-  max-width: 36rem;
   text-align: left;
   line-height: 1.6;
 }
@@ -94,22 +101,28 @@ li {
 }
 
 .list-item {
-  background-color: gray;
+  background-color: var(--list-item-background-color);
+  color: var(--list-item-color);
   padding: 1rem;
   border-radius: .8rem;
-  color: aliceblue;
 }
 
-.list-item p:first-of-type {
+.list-item-label,
+.list-item-text {
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.list-item-label {
   text-align: center;
   width: 4rem;
-  border-radius: .5rem;
-  background-color: red;
   margin-bottom: .8rem;
+  background-color: var(--list-item-label-background-color);
+  color: var(--list-item-label-color);
 }
 
-.list-item p:last-of-type {
-  text-indent: 1rem;
+.list-item-text {
+  background-color: var(--list-item-text-background-color);
 }
 
 .cite {
@@ -121,4 +134,28 @@ li {
 .final-text {
   margin: 3rem auto;
   padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .tribute-hero {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 3rem;
+  }
+
+  .title-container {
+    position: relative;
+    top: 8rem;
+  }
+
+  #img-div {
+    position: relative;
+    top: 2rem;
+  }
+
+  .arrow-container {
+    position: absolute;
+    bottom: 2rem;
+  }
 }
