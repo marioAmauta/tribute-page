@@ -22,10 +22,13 @@ body {
   text-align: center;
   color: #333;
   border-radius: 0.5rem;
+  background-color: red;
+  margin: .5rem;
 }
 
 #title {
   font-size: 2.2rem;
+  margin-top: 2rem;
 }
 
 #img-div {
@@ -34,6 +37,8 @@ body {
 
 #image {
   max-width: 100%;
+  height: 100%;
+  border-radius: .5rem;
 }
 
 #img-caption {
@@ -49,17 +54,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
 }
 
 .arrow {
-  height: 5vw;
-  width: 5vw;
+  height: 1.3rem;
+  width: 1.3rem;
   border-style: solid;
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
+  margin-bottom: 3rem;
 }
 
 .arrow:hover {
@@ -69,6 +74,7 @@ body {
 
 .info-section-title {
   font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
 
 .list-section {
@@ -80,6 +86,25 @@ body {
 
 li {
   margin: 1rem 0;
+}
+
+.list-item {
+  background-color: gray;
+  padding: 1rem;
+  border-radius: .8rem;
+  color: aliceblue;
+}
+
+.list-item p:first-of-type {
+  text-align: center;
+  width: 4rem;
+  border-radius: .5rem;
+  background-color: red;
+  margin-bottom: .8rem;
+}
+
+.list-item p:last-of-type {
+  text-indent: 1rem;
 }
 
 .cite {
